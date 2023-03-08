@@ -1,0 +1,64 @@
+.header{
+  color: #FFA500;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #1e2833;
+  color: #fff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #1c2331;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px #0f1622;
+}
+
+.dice {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.dice.rolling {
+  animation: roll 1s ease-in-out infinite;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  50% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+  75% {
+    transform: rotateX(540deg) rotateY(540deg);
+  }
+  100% {
+    transform: rotateX(720deg) rotateY(720deg);
+  }
+}
+
